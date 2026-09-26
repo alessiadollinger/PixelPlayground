@@ -37,6 +37,14 @@ function drawHorizontalLine(x, y, color) {
     drawPixel(x+4, y, color);
 }
 
+function drawVerticalLine(x, y, color) {
+drawPixel(x, y, color);
+drawPixel(x, y+1, color);
+drawPixel(x, y+2, color);
+drawPixel(x, y+3, color);
+drawPixel(x, y+4, color);
+}
+
 clearScreen("black");
 
 // test code 
@@ -49,3 +57,25 @@ checkPixel(1,1, "black", "checkPixel(1,1)")
 
 // reset
 clearScreen("black");
+
+
+drawVerticalLine(10, 10, "green");
+drawHorizontalLine(10, 10, 'green');
+drawHorizontalLine(10, 14, 'green');
+drawVerticalLine(14, 10, 'green');
+drawPixel(10, 9, 'green');
+drawPixel(11, 8, 'green');
+drawPixel(12, 7, 'green');
+drawPixel(13, 8, 'green');
+drawPixel(14, 9, 'green');
+
+
+drawPixel(40, 40, 'brown')
+drawPixel(41, 41, 'brown')
+drawPixel(42, 42, 'brown')
+drawPixel(41, 44, 'brown')
+
+drawPixel(50, 44, 'brown')
+drawPixel (49, 42, 'brown')
+drawPixel(50, 41, 'brown')
+drawPixel(51, 40, 'brown')
